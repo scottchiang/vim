@@ -54,3 +54,7 @@ call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
 call minpac#add('scrooloose/nerdtree')
 call minpac#add('junegunn/fzf')
 call minpac#add('mhinz/vim-grepper')
+
+call minpac#add('dracula/vim',{'name': 'dracula'})
+packadd! dracula
+colorscheme dracula
