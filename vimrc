@@ -23,6 +23,10 @@ let g:grepper.tools = ['grep', 'git', 'rg']
         "autocmd VimEnter * :Vexplore
 "augroup END
 
+" Vim Terraform config
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+
 "" Nerdtree config
 nnoremap <silent> <C-k><C-b> :NERDTreeToggle<CR>
 augroup nerdtree_open
@@ -55,6 +59,7 @@ call minpac#add('scrooloose/nerdtree')
 call minpac#add('junegunn/fzf')
 call minpac#add('mhinz/vim-grepper')
 call minpac#add('ycm-core/YouCompleteMe', {'do': './install.py --all'})
+call minpac#add('hashivim/vim-terraform')
 
 call minpac#add('dracula/vim',{'name': 'dracula'})
 packadd! dracula
