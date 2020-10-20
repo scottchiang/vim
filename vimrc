@@ -33,6 +33,7 @@ augroup nerdtree_open
   autocmd!
   autocmd VimEnter * NERDTree | wincmd p
 augroup END
+let NERDTreeShowHidden=1
 
 filetype plugin indent on
 syntax on
@@ -55,11 +56,14 @@ call minpac#init()
 
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+call minpac#add('tpope/vim-fugitive')
 call minpac#add('scrooloose/nerdtree')
 call minpac#add('junegunn/fzf')
 call minpac#add('mhinz/vim-grepper')
 call minpac#add('ycm-core/YouCompleteMe', {'do': './install.py --all'})
 call minpac#add('hashivim/vim-terraform')
+call minpac#add('dense-analysis/ale')
+call minpac#add('sheerun/vim-polyglot')
 
 call minpac#add('dracula/vim',{'name': 'dracula'})
 packadd! dracula
